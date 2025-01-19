@@ -1,0 +1,41 @@
+{
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{0194800b-c45b-746c-8f7d-4345f3a9fcdd}",
+      "strict_min_version": "134.0"
+    }
+  },
+  "manifest_version": 3,
+  "name": "ReaderView Summarizer",
+  "version": "1.0",
+  "description": "Summarizes selected text using Perplexity AI (without API key).",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.perplexity.ai/*"
+  ],
+  "action": {
+    "default_title": "Summarize with Perplexity",
+	"default_icon": {
+      "48": "icons/icon-light.svg"
+    },
+    "theme_icons": [
+      {
+        "light": "icons/icon-light.svg",
+        "dark": "icons/icon-dark.svg",
+        "size": 48
+      }
+    ]
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons": {
+    "48": "icons/icon-light.svg",
+	"48": "icons/icon-dark.svg"
+  }
+}
